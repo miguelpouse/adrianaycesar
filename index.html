@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriana & Cesar | Nuestra Boda</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="music-player-luxury">
+        <button id="music-btn" class="music-toggle">
+            <div class="music-bars"><span></span><span></span><span></span></div>
+        </button>
+        <audio id="wedding-song" loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <header class="hero-parallax">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-pretitle">SAVE THE DATE</p>
+            <h1 class="hero-title">Adriana <span class="ampersand">&</span> Cesar</h1>
+            <div class="hero-details">
+                <span class="line"></span>
+                <p>14 . NOVIEMBRE . 2026</p>
+                <span class="line"></span>
+            </div>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Boda+Adriana+y+Cesar&dates=20261114T230000Z/20261115T050000Z&details=¡Acompáñanos!&location=Hacienda+Los+Olivos" 
+               target="_blank" class="btn-calendar">
+               AGENDAR FECHA
+            </a>
+        </div>
+    </header>
+
+    <section class="section-luxury">
+        <div class="container">
+            <h2 class="cinzel-title gold">El Gran Día Comienza En</h2>
+            <div id="countdown" class="countdown-luxury">
+                <div class="unit">
+                    <span id="days">00</span>
+                    <p>DÍAS</p>
+                </div>
+                <div class="unit">
+                    <span id="hours">00</span>
+                    <p>HRS</p>
+                </div>
+                <div class="unit">
+                    <span id="minutes">00</span>
+                    <p>MIN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-luxury bg-white">
+        <div class="container grid-2">
+            <div class="location-box">
+                <span class="num">01</span>
+                <h3>Ceremonia</h3>
+                <p class="time">17:00 HRS</p>
+                <div class="map-editorial">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.662123456789!2d-99.16!3d19.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzQ4LjAiTiA5OcKwMDknMzYuMCJX!5e0!3m2!1ses!2smx!4v123456789" loading="lazy"></iframe>
+                </div>
+                <p class="place">Parroquia de Nuestra Señora</p>
+                <a href="#" class="link-luxury">VER EN MAPA</a>
+            </div>
+
+            <div class="location-box">
+                <span class="num">02</span>
+                <h3>Recepción</h3>
+                <p class="time">19:00 HRS</p>
+                <div class="map-editorial">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.662123456789!2d-99.16!3d19.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzQ4LjAiTiA5OcKwMDknMzYuMCJX!5e0!3m2!1ses!2smx!4v123456789" loading="lazy"></iframe>
+                </div>
+                <p class="place">Hacienda Los Olivos</p>
+                <a href="#" class="link-luxury">VER EN MAPA</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-luxury bg-dark">
+        <div class="container">
+            <h2 class="cinzel-title gold">Dress Code</h2>
+            <p class="dc-type">FORMAL ETIQUETA</p>
+            <div class="dc-flex">
+                <div class="dc-card">
+                    <i class="fa-solid fa-venus"></i>
+                    <h4>DAMAS</h4>
+                    <p>Vestido largo de gala</p>
+                </div>
+                <div class="v-line"></div>
+                <div class="dc-card">
+                    <i class="fa-solid fa-mars"></i>
+                    <h4>CABALLEROS</h4>
+                    <p>Traje oscuro / Esmoquin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-luxury">
+        <div class="container">
+            <h2 class="cinzel-title">Mesa de Regalos</h2>
+            <div class="grid-2 gap-40">
+                <div class="neo-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Liverpool_logo.svg/2560px-Liverpool_logo.svg.png" width="140" alt="Liverpool">
+                    <p class="event-id">Evento: 50482931</p>
+                    <a href="#" class="btn-neo">VISITAR MESA</a>
+                </div>
+                <div class="neo-card">
+                    <i class="fa-brands fa-paypal paypal-icon"></i>
+                    <p class="event-id">PayPal</p>
+                    <a href="#" class="btn-neo">ENVIAR REGALO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-luxury bg-dark">
+        <div class="container">
+            <div class="rsvp-card">
+                <h2 class="cinzel-title gold">Confirma tu Asistencia</h2>
+                <form id="rsvp-form" class="form-luxury">
+                    <input type="text" placeholder="Tu nombre completo" required>
+                    <select required>
+                        <option value="" disabled selected>¿Asistirás?</option>
+                        <option value="si">Confirmar Asistencia</option>
+                        <option value="no">No podré asistir</option>
+                    </select>
+                    <button type="submit" class="btn-confirm">ENVIAR CONFIRMACIÓN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-luxury-final">
+        <div class="footer-container">
+            <div class="f-brand-block">
+                <h2 class="f-logo">A <span class="f-ampersand">&</span> C</h2>
+                <p class="f-location">MÉXICO — 2026</p>
+            </div>
+            <div class="f-message-block">
+                <p class="f-thanks script">Gracias por ser parte de nuestra historia</p>
+                <div class="f-hashtag-wrapper">
+                    <span class="f-line"></span>
+                    <span class="f-tag">#BODAADRIANAYCESAR</span>
+                    <span class="f-line"></span>
+                </div>
+            </div>
+            <div class="f-agency-block">
+                <p class="f-made">CRAFTED WITH LOVE BY</p>
+                <h3 class="f-agency">SWEET LOVE CREATIONS<span class="f-tm">™</span></h3>
+                <div class="f-social-minimal">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="f-legal">
+            <p>14 . NOVIEMBRE . 2026 — TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Contador
+        const weddingDate = new Date("Nov 14, 2026 17:00:00").getTime();
+        setInterval(() => {
+            const dist = weddingDate - new Date().getTime();
+            document.getElementById("days").innerText = Math.floor(dist / 864e5);
+            document.getElementById("hours").innerText = Math.floor((dist % 864e5) / 36e5);
+            document.getElementById("minutes").innerText = Math.floor((dist % 36e5) / 6e4);
+        }, 1000);
+
+        // Música
+        const musicBtn = document.getElementById('music-btn');
+        const audio = document.getElementById('wedding-song');
+        musicBtn.onclick = () => {
+            audio.paused ? (audio.play(), musicBtn.classList.add('active')) : (audio.pause(), musicBtn.classList.remove('active'));
+        };
+
+        // Confeti
+        document.getElementById('rsvp-form').onsubmit = (e) => {
+            e.preventDefault();
+            confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#b35528', '#f8f2e8', '#1d2739'] });
+            alert('¡Gracias por confirmar! Adriana y Cesar te esperan.');
+        };
+
+        ScrollReveal().reveal('.location-box, .dc-card, .neo-card', { delay: 200, distance: '50px', origin: 'bottom', interval: 150 });
+    </script>
+</body>
+</html>
